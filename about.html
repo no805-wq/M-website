@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Magud College</title>
+
+    <link rel="stylesheet" href="/css/about.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="layout-container">
+        <div class="site-logo">
+          <img
+            src="images/Mask group.png"
+            loading="lazy"
+            alt="Magud College Logo"
+            class="site-logo__image"
+          />
+          <span>Magud College</span>
+        </div>
+
+        <nav>
+          <ul class="nav-sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 -960 960 960"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="is-active">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html" class="btn btn--primary">Apply Now</a></li>
+          </ul>
+
+          <ul class="nav-links">
+            <li class="hide-on-mobile">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="about.html" class="is-active">About</a>
+            </li>
+            <li class="hide-on-mobile"><a href="program.html">Programs</a></li>
+            <li class="hide-on-mobile"><a href="admission.html">Admissions</a></li>
+            <li class="hide-on-mobile">
+              <a href="#">Student Portal</a>
+            </li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+
+            <li class="menu-toggle" onclick="showSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 -960 960 960"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hide-on-mobile">
+          <a href="apply.html" class="btn btn--primary">Apply Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="about-container">
+        <section class="hero">
+          <div class="hero-grid-container">
+            <div class="hero-card">
+              <img
+                src="images/african.jpg"
+                loading="lazy"
+                alt="Healthcare students"
+              />
+
+              <div class="hero-overlay">
+                <h1>Our Story And Commitment</h1>
+                <p>
+                  Discover the history, mission, values that drives Magud
+                  College dedication to excellence in healthcare education and
+                  student success.
+                </p>
+
+                <div class="hero-actions">
+                  <a href="program.html" class="btn btn--primary">Explore Programs</a>
+                  <a href="apply.html" class="btn btn--primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Core Principles -->
+      <section class="about-section">
+        <div class="container">
+          <h2 class="section-title">Our Core Principles</h2>
+
+          <div class="principles-grid">
+            <div class="principle-card">
+              <img
+                src="images/mission.svg"
+                loading="lazy"
+                alt="Mission Icon"
+                class="principle-icon"
+              />
+              <h3>Our Mission</h3>
+              <p>
+                To provide exceptional education and training that prepares
+                students for successful careers in the health sciences,
+                fostering innovation and community service.
+              </p>
+            </div>
+
+            <div class="principle-card">
+              <img
+                src="images/vision.svg"
+                loading="lazy"
+                alt="Vision Icon"
+                class="principle-icon"
+              />
+              <h3>Our Vision</h3>
+              <p>
+                To be a leading institution in healthcare education, recognized
+                for innovation, excellence, and a profound impact on community
+                health and well-being.
+              </p>
+            </div>
+
+            <div class="principle-card">
+              <img
+                src="images/value.svg"
+                loading="lazy"
+                alt="Value Icon"
+                class="principle-icon"
+              />
+              <h3>Our Value</h3>
+              <p>
+                We uphold integrity, compassion, excellence, and commitment to
+                lifelong learning and student success in all our endeavors.
+              </p>
+            </div>
+          </div>
+
+          <!-- History -->
+          <h2 class="section-title">Our History</h2>
+
+          <div class="history-grid">
+            <div class="timeline">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <div class="line"></div>
+            </div>
+
+            <div class="history-content">
+              <div class="history-item">
+                <span class="year">2010</span>
+                <h4>Foundation of Magud College</h4>
+                <p>
+                  Magud College of Health Science and Technology was founded
+                  with a singular mission: to address the growing need for
+                  skilled healthcare professionals.
+                </p>
+              </div>
+
+              <div class="history-item">
+                <span class="year">2015</span>
+                <h4>First Graduating Class</h4>
+                <p>
+                  We proudly celebrated our first graduating class, with over
+                  95% of graduates securing employment in the healthcare sector
+                  within six months.
+                </p>
+              </div>
+
+              <div class="history-item">
+                <span class="year">2018</span>
+                <h4>Campus Expansion</h4>
+                <p>
+                  Opened a new state-of-the-art campus to support growing
+                  enrollment and advanced training facilities.
+                </p>
+              </div>
+
+              <div class="history-item">
+                <span class="year">2023</span>
+                <h4>National recognition</h4>
+                <p>
+                  Awarded "Best College for Health Sciences" for innovative
+                  curriculum and commitment to student success and community
+                  outreach.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-bottom">
+        <div class="about-grid-container">
+          <div class="about-card">
+            <div class="about-overlay">
+              <h3>99</h3>
+              <p>
+                "Our commitment extends beyond the classroom. We are dedicated
+                to nurturing compassionate, skilled and ethnical leaders who
+                will shape the future of healthcare."
+              </p>
+              <span>Comrade Hassan Kabir Dalhatu</span>
+              <p1>President, Magud College.</p1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-col footer-brand">
+            <h4>Magud College</h4>
+            <p class="footer-address">
+              Kofar kudu gwarzo, along<br />
+              dauda mai loma's house.
+            </p>
+            <p class="footer-email">magudcohste@gmail.com</p>
+            <p class="footer-phone">07063328264</p>
+          </div>
+
+          <div class="footer-col collapsible">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Academics</a></li>
+              <li><a href="#">Campus Life</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col collapsible">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Career Services</a></li>
+              <li><a href="#">Student Portal</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Stay informed about our latest news and events.</p>
+
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit">→</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2024 Magud College of Health Science And Technology. All Rights
+            Reserved.
+          </p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </main>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".nav-sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".nav-sidebar");
+        sidebar.style.display = "none";
+      }
+
+      document
+        .querySelectorAll(".footer-col.collapsible h4")
+        .forEach((header) => {
+          header.addEventListener("click", () => {
+            header.parentElement.classList.toggle("active");
+          });
+        });
+    </script>
+  </body>
+</html>

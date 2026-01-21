@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Magud College</title>
+
+    <link rel="stylesheet" href="/css/apply-health.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="layout-container">
+        <div class="site-logo">
+          <img
+            src="images/Mask group.png"
+            alt="Magud College Logo"
+            class="site-logo__image"
+          />
+          <span>Magud College</span>
+        </div>
+
+        <nav>
+          <ul class="nav-sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 -960 960 960"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html" class="btn--primary">Apply Now</a></li>
+          </ul>
+
+          <ul class="nav-links">
+            <li class="hide-on-mobile">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="about.html">About</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="program.html">Programs</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="admission.html">Admissions</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="#">Student Portal</a>
+            </li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+
+            <li class="menu-toggle" onclick="showSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 -960 960 960"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hide-on-mobile">
+          <a href="apply.html" class="btn--primary">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="form-wrapper">
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar">
+          <div class="progress-step active">
+            <span class="icon">👤</span>
+            <p>Personal Info</p>
+          </div>
+          <div class="progress-step">
+            <span class="icon">🎓</span>
+            <p>Academic History</p>
+          </div>
+          <div class="progress-step">
+            <span class="icon">👪</span>
+            <p>Next of Kin</p>
+          </div>
+          <div class="progress-step">
+            <span class="icon">📄</span>
+            <p>Declaration</p>
+          </div>
+        </div>
+
+        <!-- ================= STEP 1 ================= -->
+        <form class="form-card step-form active" id="step1" novalidate>
+          <div class="form-header">STEP 1: PERSONAL INFORMATION</div>
+
+          <div class="form-grid">
+            <div class="form-group full">
+              <label>Full Name</label>
+              <input
+                type="text"
+                required
+                placeholder="Enter full name as it appears on documents"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Date of Birth</label>
+              <input type="date" required />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" required placeholder="+234..." />
+            </div>
+
+            <div class="form-group full">
+              <label>Email Address</label>
+              <input type="email" required placeholder="example@email.com" />
+            </div>
+
+            <div class="form-group full">
+              <label>Residential Address</label>
+              <textarea
+                required
+                placeholder="Full residential address"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Course Applied For (1st Choice)</label>
+              <select required>
+                <option value="">Select a course</option>
+                <option>Nursing</option>
+                <option>Medical Laboratory</option>
+                <option>Public Health</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Course Applied For (2nd Choice)</label>
+              <select required>
+                <option value="">Select a course</option>
+                <option>Nursing</option>
+                <option>Medical Laboratory</option>
+                <option>Public Health</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label>Special Ability (If Any)</label>
+              <input
+                type="text"
+                placeholder="Specify any physical challenges or special needs"
+              />
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="next-btn">NEXT →</button>
+          </div>
+
+          <p class="note">
+            Step 1 of 4: All fields are mandatory unless otherwise specified.
+            Your progress is saved automatically.
+          </p>
+        </form>
+
+        <!-- ================= STEP 2 ================= -->
+        <form class="form-card step-form" id="step2" novalidate>
+          <div class="form-header">STEP 2: ACADEMIC RECORD</div>
+
+          <!-- TOP ROW -->
+          <div class="form-grid academic-top">
+            <div class="form-group">
+              <label>Exam Type</label>
+              <select required>
+                <option value="">Select Exam</option>
+                <option>WAEC</option>
+                <option>NECO</option>
+                <option>NABTEB</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Reg Number</label>
+              <input type="text" required placeholder="E.g. 52410291AB" />
+            </div>
+
+            <div class="form-group">
+              <label>Center Number</label>
+              <input type="text" required placeholder="E.g. 0524101" />
+            </div>
+
+            <div class="form-group">
+              <label>Exam Year</label>
+              <input type="number" required placeholder="YYYY" />
+            </div>
+          </div>
+
+          <!-- SCHOOLS -->
+          <div class="school-list">
+            <div class="school-row">
+              <span class="num">01</span>
+              <input
+                type="text"
+                required
+                placeholder="Name of secondary school attended and period (e.g. Hope Academy, 2016 - 2022)"
+              />
+            </div>
+
+            <div class="school-row">
+              <span class="num">02</span>
+              <input
+                type="text"
+                placeholder="Additional school or training (Optional)"
+              />
+            </div>
+          </div>
+
+          <!-- ================= FIRST SITTING ================= -->
+          <div class="grade-section">
+            <div class="grade-header">
+              <h4>SSCE GRADE RECORD (FIRST SITTING)</h4>
+              <span>English and Mathematics are compulsory</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>S/N</th>
+                  <th>Subject</th>
+                  <th>Grade</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody id="grade-body">
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <input type="text" value="English Language" readonly />
+                  </td>
+                  <td>
+                    <select required>
+                      <option value="">Select</option>
+                      <option>A1</option>
+                      <option>B2</option>
+                      <option>B3</option>
+                      <option>C4</option>
+                      <option>C5</option>
+                      <option>C6</option>
+                      <option>D7</option>
+                      <option>E8</option>
+                      <option>F9</option>
+                    </select>
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td><input type="text" value="Mathematics" readonly /></td>
+                  <td>
+                    <select required>
+                      <option value="">Select</option>
+                      <option>A1</option>
+                      <option>B2</option>
+                      <option>B3</option>
+                      <option>C4</option>
+                      <option>C5</option>
+                      <option>C6</option>
+                      <option>D7</option>
+                      <option>E8</option>
+                      <option>F9</option>
+                    </select>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="add-row">
+              <button type="button" id="add-row">+ Add Subject</button>
+            </div>
+          </div>
+
+          <!-- ================= SECOND SITTING ================= -->
+          <div class="grade-section">
+            <div class="grade-header">
+              <h4>SSCE GRADE RECORD (SECOND SITTING – OPTIONAL)</h4>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>S/N</th>
+                  <th>Subject</th>
+                  <th>Grade</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody id="grade-body-2"></tbody>
+            </table>
+
+            <div class="add-row">
+              <button type="button" id="add-row-2">+ Add Subject</button>
+            </div>
+          </div>
+
+          <div class="form-footer dual">
+            <button type="button" class="back-btn" onclick="showStep(1)">
+              ← BACK
+            </button>
+            <button type="submit" class="next-btn">SAVE & CONTINUE →</button>
+
+            <p class="note">Page 2 of 4</p>
+          </div>
+        </form>
+
+        <!-- ================= STEP 3 ================= -->
+        <form class="form-card step-form" id="step3" novalidate>
+          <div class="form-header">STEP 3: NEXT OF KIN & SPONSORSHIP</div>
+
+          <div class="form-grid">
+            <div class="form-group full">
+              <label>Next of Kin Full Name</label>
+              <input
+                type="text"
+                required
+                placeholder="Enter first and last name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" required placeholder="+234..." />
+            </div>
+
+            <div class="form-group">
+              <label>Relationship</label>
+              <select required>
+                <option value="">Select Relationship</option>
+                <option>Parent</option>
+                <option>Sibling</option>
+                <option>Guardian</option>
+                <option>Spouse</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label>Sponsorship Details</label>
+              <textarea
+                required
+                placeholder="Specify who will be responsible for your fees (e.g. Self, Parent, Organization, Government Scholarship)"
+              >
+              </textarea>
+            </div>
+
+            <div class="form-group full">
+              <label>Next of Kin Home Address</label>
+              <textarea
+                required
+                placeholder="Full residential address of next of kin"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer dual">
+            <button type="button" class="back-btn" onclick="showStep(2)">
+              ← BACK
+            </button>
+            <button type="submit" class="next-btn">SAVE & CONTINUE →</button>
+          </div>
+
+          <p class="note">Step 3 of 4</p>
+        </form>
+
+        <!-- ================= STEP 4 ================= -->
+        <form class="form-card step-form" id="step4" novalidate>
+          <div class="form-header">APPLICATION STEP 4: FINAL DECLARATION</div>
+
+          <!-- DECLARATION BOX -->
+          <div class="declaration-box">
+            <label class="declaration-check">
+              <input type="checkbox" id="declarationCheck" required />
+              <span>
+                I hereby declare that all the information provided in this
+                application form is true, complete, and accurate to the best of
+                my knowledge. I understand that any false statement or omission
+                of information may result in the rejection of my application or
+                immediate dismissal if discovered after admission. I agree to
+                abide by the rules and regulations of Magud College of Health
+                Science & Technology.
+              </span>
+            </label>
+          </div>
+
+          <!-- SIGNATURE GRID -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label>DIGITAL SIGNATURE (TYPE FULL NAME)</label>
+              <input
+                type="text"
+                id="digitalSignature"
+                required
+                placeholder="Your Full Legal Name"
+              />
+              <small
+                >By typing your name, you are legally signing this
+                application.</small
+              >
+            </div>
+
+            <div class="form-group">
+              <label>SUBMISSION DATE</label>
+              <input type="text" id="submissionDate" readonly />
+            </div>
+          </div>
+
+          <!-- WARNING BOX -->
+          <div class="warning-box">
+            ⚠️ Please review all sections (Personal Info, Academic History, and
+            Next of Kin) carefully. Once submitted, your application cannot be
+            modified.
+          </div>
+
+          <!-- FOOTER -->
+          <div class="form-footer dual">
+            <button type="button" class="back-btn" onclick="showStep(3)">
+              ← BACK
+            </button>
+
+            <button type="submit" class="next-btn">SUBMIT APPLICATION →</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script>
+      function showSidebar() {
+        document.querySelector(".nav-sidebar").style.display = "flex";
+      }
+
+      function hideSidebar() {
+        document.querySelector(".nav-sidebar").style.display = "none";
+      }
+
+      /* ================= STEP SWITCH ================= */
+      let currentStep = 1;
+
+      function showStep(step) {
+        const forms = document.querySelectorAll(".step-form");
+
+        forms.forEach((form) => {
+          form.classList.remove("active", "slide-in-right", "slide-in-left");
+        });
+
+        const nextForm = document.getElementById("step" + step);
+
+        if (step > currentStep) {
+          nextForm.classList.add("slide-in-right");
+        } else {
+          nextForm.classList.add("slide-in-left");
+        }
+
+        nextForm.classList.add("active");
+
+        document.querySelectorAll(".progress-step").forEach((el, index) => {
+          el.classList.toggle("active", index <= step - 1);
+        });
+
+        currentStep = step;
+      }
+
+      /* ================= STEP 1 ================= */
+      document.getElementById("step1").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+
+        showStep(2);
+      });
+
+      /* ================= SSCE TABLE LOGIC ================= */
+      const gradeBody1 = document.getElementById("grade-body");
+      const gradeBody2 = document.getElementById("grade-body-2");
+
+      const addBtn1 = document.getElementById("add-row");
+      const addBtn2 = document.getElementById("add-row-2");
+
+      const MAX_SUBJECTS = 9;
+
+      function updateSN(tbody) {
+        [...tbody.children].forEach((row, i) => {
+          row.children[0].textContent = i + 1;
+        });
+      }
+
+      function getSubjects(tbody) {
+        return [...tbody.querySelectorAll("input")].map((i) =>
+          i.value.trim().toLowerCase()
+        );
+      }
+
+      function toggleAddButton(tbody, button) {
+        button.disabled = tbody.children.length >= MAX_SUBJECTS;
+        button.style.opacity = button.disabled ? "0.5" : "1";
+        button.style.cursor = button.disabled ? "not-allowed" : "pointer";
+      }
+
+      function createRow(tbody, button) {
+        if (tbody.children.length >= MAX_SUBJECTS) {
+          alert("You can only add a maximum of 9 subjects.");
+          return;
+        }
+
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+      <td></td>
+      <td><input type="text" required placeholder="Subject name"></td>
+      <td>
+        <select required>
+          <option value="">Select</option>
+          <option>A1</option><option>B2</option><option>B3</option>
+          <option>C4</option><option>C5</option><option>C6</option>
+          <option>D7</option><option>E8</option><option>F9</option>
+        </select>
+      </td>
+      <td><button type="button" class="remove-btn">✕</button></td>
+    `;
+
+        const subjectInput = row.querySelector("input");
+
+        subjectInput.addEventListener("blur", () => {
+          const subjects = getSubjects(tbody);
+          const duplicates = subjects.filter(
+            (s) => s === subjectInput.value.trim().toLowerCase()
+          );
+
+          if (duplicates.length > 1) {
+            alert("This subject has already been added.");
+            row.remove();
+            updateSN(tbody);
+            toggleAddButton(tbody, button);
+          }
+        });
+
+        row.querySelector(".remove-btn").addEventListener("click", () => {
+          row.remove();
+          updateSN(tbody);
+          toggleAddButton(tbody, button);
+        });
+
+        tbody.appendChild(row);
+        updateSN(tbody);
+        toggleAddButton(tbody, button);
+      }
+
+      /* FIRST SITTING */
+      addBtn1.addEventListener("click", () => {
+        createRow(gradeBody1, addBtn1);
+      });
+
+      /* SECOND SITTING */
+      addBtn2.addEventListener("click", () => {
+        createRow(gradeBody2, addBtn2);
+      });
+
+      /* ================= STEP 2 ================= */
+      document.getElementById("step2").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+
+        for (let row of gradeBody1.children) {
+          const subject = row.querySelector("input");
+          const grade = row.querySelector("select");
+
+          if (!subject.value.trim() || !grade.value) {
+            alert("Please complete all First Sitting subjects and grades.");
+            return;
+          }
+        }
+
+        if (gradeBody2.children.length > 0) {
+          for (let row of gradeBody2.children) {
+            const subject = row.querySelector("input");
+            const grade = row.querySelector("select");
+
+            if (!subject.value.trim() || !grade.value) {
+              alert("Please complete all Second Sitting subjects and grades.");
+              return;
+            }
+          }
+        }
+
+        showStep(3);
+      });
+
+      /* ================= STEP 3 ================= */
+      document.getElementById("step3").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!this.checkValidity()) {
+          this.reportValidity();
+          return;
+        }
+
+        showStep(4);
+      });
+
+      /* ================= STEP 4 ================= */
+      document.addEventListener("DOMContentLoaded", () => {
+        const dateField = document.getElementById("submissionDate");
+        const today = new Date();
+        dateField.value = today.toLocaleDateString("en-GB", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        });
+      });
+
+      document.getElementById("step4").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const checkbox = document.getElementById("declarationCheck");
+        const signature = document.getElementById("digitalSignature");
+
+        if (!checkbox.checked) {
+          alert("You must agree to the declaration before submitting.");
+          return;
+        }
+
+        if (signature.value.trim().length < 3) {
+          alert("Please enter your full legal name as digital signature.");
+          signature.style.borderColor = "red";
+          return;
+        }
+
+        signature.style.borderColor = "#d1d5db";
+        alert("Application submitted successfully!");
+      });
+    </script>
+  </body>
+</html>

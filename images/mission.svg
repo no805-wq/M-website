@@ -1,0 +1,14 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_2108_968" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect width="79.5442" height="79.5442" fill="url(#pattern0_2108_968)"/>
+</mask>
+<g mask="url(#mask0_2108_968)">
+<rect x="-43.749" y="-35.7949" width="166.048" height="150.14" fill="#4CAF50"/>
+</g>
+<defs>
+<pattern id="pattern0_2108_968" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2108_968" transform="scale(0.03125)"/>
+</pattern>
+<image id="image0_2108_968" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAAIAAAAAOgBAABAAAAIAAAAAAAAACR/tRfAAADUElEQVR4nK2Xy2/NURDHP724uiNaqijxKCGISIhXhESKREPs/A1exaILj7bSLRuq/wAS6hUbjwRF2hJVFhKPhYUqmhCqtdFqZWROMqbnd+/vhm9ykt9vZs6Zc+Z15hSRHuOBjcA2YDFQBlQorxvoBV4A14FW4Cf/CdOAZqAPGEk5vgFNwNR/UVwMNAI/ClDsxwDQoNaLoiiBXg5cA1Y6+hDwALgNvNchmKGjClgPjHXzOoCdwKc0J1+qPrUnEfMfBialmC8yRyIu69a1c6I8ovwCUErhmAy0RDYhOhJ9/tgIDwNHI24aA6wDDgIndRwA1gAZJytz63StsG6H6hqFRrdbUW4hgVQDfMwRdMLbD2Td3DonJ4E5KtUGnNntyWcBzwuI/mfATGcJ645+n6LNLuBKnfIPToGYtAs4B5wFnjozj+gcu4kpwHfDb7KmtREr0W55/uQXgTkRF84FLjnZLueOY65YZYW41RAHgRIzocYtKOmVD97few2vRHUEXhVqikC4Y4QzLuAkLtLisnOFzY5WwzsthHuGUGsE1zqfe7OLe7YD1cA4x5vnYkJSNKDWpSSvDWGXETxk6E+cgqxODvz2SOp1Gb7UiYBqQ+/NaAoGiLkCLP2NW3wzsMr8r1aaxSvzPd18fzHfEzK6kwCb+0l0z0uSSbVWxp3a1mlLn+8WvwW0mX9xxw0nsyBhLZtlfSHSA2zheGS+l2ueBwya7mgHsEFpAZXAMrfBgIXm+61Pw7sR6wSelNK0uGrm9bg0tFl3Cg2eQBhyZXifKypSZPKhwc3Zk6MQbUJz+GvCLZh16TSiRUby3KPSnVxGp6sRdbFSLDjjLiNpJmxc5LqMzuvt5y+jHm3TAsrcZfTH/Db6B5y/bbpURCyRa3Q65UWuPPfrhv7C8Tz+zurF0pNDsfB2R0pzfZpYKnbldVgFfYHJaOWTm/KEjhqlxVqyeueetlxtenmkKW3RZqJQlDmzy3gXM32atvy7ZoetYkkoVcv1R5QvKeRhcsVdOIJfwEPgJvAS+GyULgK2aMcsnbNFuz5M5P2YGsVaVGx2FDr61RqJPicFpHuVci2FI61ikZVuJ6+/k1wQg6ShXDrSUKwAZgMTTfGSi0XyX57n99M+z38DxUKW0o5T4+gAAAAASUVORK5CYII="/>
+</defs>
+</svg>

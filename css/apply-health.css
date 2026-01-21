@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #c1e1f1;
+}
+
+.site-header {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #20373b;
+}
+
+.layout-container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.nav-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 999;
+
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px 15px;
+
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+  transform: translateX(100%);
+}
+
+.nav-sidebar[style*="flex"] {
+  transform: translateX(0);
+}
+
+.nav-sidebar li {
+  width: 100%;
+}
+
+.nav-sidebar a {
+  width: 100%;
+  font-weight: 500;
+  color: #20373b;
+  text-decoration: none;
+}
+
+.nav-sidebar .btn--primary {
+  color: #fff;
+}
+
+.nav-sidebar a:hover,
+.nav-sidebar .is-active {
+  color: #2aa344;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #20373b;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-links a:hover,
+.nav-links .is-active {
+  color: #2aa344;
+  font-weight: 600;
+}
+
+.btn--primary {
+  padding: 0.6rem 1.1rem;
+  border-radius: 20px 20px 20px 0px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #36b24a;
+  color: #fff;
+
+}
+
+.btn--primary:hover {
+  background: #228b37;
+}
+
+.form-wrapper {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+/* Progress */
+.progress-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.progress-step {
+  color: #9ca3af;
+}
+
+.progress-step.active {
+  color: #36b24a;
+  font-weight: 600;
+}
+
+.progress-step .icon {
+  background: #e5e7eb;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.progress-step.active .icon {
+  background: #36b24a;
+  color: #fff;
+}
+
+/* Form */
+.step-form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  display: none;
+}
+
+.step-form.active {
+  display: block;
+}
+
+/* ================= SLIDE ANIMATION ================= */
+
+.step-form {
+  position: relative;
+  animation-duration: 0.45s;
+  animation-fill-mode: both;
+}
+
+.step-form.slide-in-right {
+  animation-name: slideInRight;
+}
+
+.step-form.slide-in-left {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.form-header {
+  background: #36b24a;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 18px;
+}
+
+.note {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 1.2rem;
+}
+
+.academic-top {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.form-group {
+  display: grid;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  width: 100%;
+}
+
+/* Schools */
+.school-list {
+  display: grid;
+  row-gap: 12px;
+  margin-top: 20px;
+}
+
+.school-row {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 10px;
+}
+
+.school-row .num {
+  background: #f3f4f6;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* GRADE TABLE */
+.grade-section {
+  margin-top: 2rem;
+}
+
+.grade-header {
+  background: #f3f6f8;
+  padding: 0.6rem 1rem;
+  border-radius: 6px 6px 0 0;
+  font-size: 0.75rem;
+}
+
+.grade-header h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.grade-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.grade-section th,
+.grade-section td {
+  border: 1px solid #e0e0e0;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.grade-section select {
+  width: 100%;
+  padding: 0.3rem;
+}
+
+input[readonly] {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #b91c1c;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  opacity: 0.7;
+}
+
+
+/* ADD ROW */
+.add-row {
+  margin-top: 0.6rem;
+}
+
+.add-row button {
+  background: none;
+  border: none;
+  color: #36b24a;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.form-footer {
+  display: grid;
+  justify-content: end;
+  margin-top: 25px;
+}
+
+.form-footer.dual {
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.next-btn {
+  background: #36b24a;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+    background: #228b37;
+}
+
+.back-btn {
+  background: #36b24a;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #228b37;
+}
+
+/* STEP 4 – DECLARATION */
+
+.declaration-box {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.declaration-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.declaration-check input {
+  margin-top: 4px;
+}
+
+.form-group small {
+  font-size: 0.65rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.warning-box {
+  background: #fff7ed;
+  border: 1px solid #facc15;
+  color: #92400e;
+  font-size: 0.7rem;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+
+@media (max-width: 1024px) {
+    .hide-on-mobile {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-grid,
+  .academic-top {
+    grid-template-columns: 1fr;
+  }
+}
+
